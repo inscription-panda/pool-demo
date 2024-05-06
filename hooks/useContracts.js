@@ -62,3 +62,27 @@ export const useErc20Token = (tokenAddr, approveForAddr) => {
     tokenInfo,
   }
 }
+
+export const useBalancerContract = () => {
+  const address = '0xdcdbf71a870cc60c6f9b621e28a7d3ffd6dd4965'
+  const { getContract } = useContract()
+  return useMemo(
+    () => ({
+      contract: getContract(address, abi.balancerABI),
+      address,
+    }),
+    [getContract]
+  )
+}
+
+export const useLayerContract = () => {
+  const address = '0xba12222222228d8ba445958a75a0704d566bf2c8'
+  const { getContract } = useContract()
+  return useMemo(
+    () => ({
+      contract: getContract(address, abi.layerABI),
+      address,
+    }),
+    [getContract]
+  )
+}

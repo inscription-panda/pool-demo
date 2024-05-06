@@ -1,0 +1,41 @@
+.inputWrapper {
+  margin: 16px auto;
+  position: relative;
+  .inputTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+  input {
+    // margin: 12px 0;
+    height: 44px;
+    color: #231f20;
+    width: 100%;
+    background: #fff;
+    border: none;
+    outline: none;
+    padding-left: 12px;
+    box-sizing: border-box;
+    &::placeholder {
+      color: var(--second-text-color);
+    }
+  }
+  .percents {
+    display: flex;
+    border: 1px solid var(--border-color);
+    .percent {
+      color: var(--main-text-color);
+      cursor: pointer;
+      padding: 2px 6px;
+      border-right: 1px solid var(--border-color);
+      &.active {
+        color: #fff;
+        background: var(--blue-color);
+      }
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}

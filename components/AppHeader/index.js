@@ -129,9 +129,6 @@ export default function AppHeader() {
           </div>
         </div>
 
-        <div className={styles.left}>
-          <Link href="/assets"></Link>
-        </div>
         <div className={styles.right}>
           {/* <a
             className={styles.faucet}

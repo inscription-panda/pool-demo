@@ -1,0 +1,37 @@
+@import '../../assets/css/mixin.scss';
+.btn {
+  @include colorful-button;
+  &[data-type='second'] {
+    background: #3a4045;
+    box-shadow: none;
+    color: var(--main-text-color);
+  }
+
+  &[data-type='red'] {
+    background: #800020;
+    box-shadow: none;
+  }
+
+  span {
+    margin-left: 10px;
+  }
+}
+
+.large {
+  font-size: 18px;
+  height: 50px;
+  padding: 0 24px;
+}
+
+.small {
+  font-size: 16px;
+  height: 40px;
+  padding: 0 24px;
+}
+
+// @media (max-width: 768px) {
+//   .btn {
+//     padding: 10px 12px;
+//     font-size: 14px;
+//   }
+// }
