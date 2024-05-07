@@ -113,7 +113,9 @@ export default function Demo() {
         [pool_1]: price_1.toString(),
         [pool_2]: price_2.toString(),
       })
-    } catch (error) {}
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   useEffect(() => {
@@ -159,7 +161,9 @@ export default function Demo() {
             action: 'setRelayerApproval',
           }
         )
-      } catch (error) {}
+      } catch (error) {
+        console.log(error)
+      }
     }
   }
 
