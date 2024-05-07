@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useCallback } from 'react'
 import { useQuery, useQueries, useMutation } from '@tanstack/react-query'
 import Web3 from 'web3'
-import { ethers } from 'ethers'
+import { ethers } from 'ethers-6'
 import ethProvider from 'eth-provider'
 import { useConnectWallet, useSetChain } from '@web3-onboard/react'
 import moment from 'moment'
