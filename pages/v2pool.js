@@ -43,10 +43,7 @@ export default function Demo() {
   //   approveAddress: address,
   // })
 
-  const updatePrice = async () => {
-    try {
-    } catch (error) {}
-  }
+  const updatePrice = async () => {}
 
   useEffect(() => {
     if (isAllReady) updatePrice()
